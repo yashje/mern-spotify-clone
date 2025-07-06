@@ -74,7 +74,7 @@ VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 
 ## 📃 License
 
-ISC — free to use.
+ free to use.
 
 ---
 
