@@ -1,5 +1,5 @@
 
-<h1 align="">🎵 MERN Spotify Clone ✨</h1>
+<h1 align="center">🎵 MERN Spotify Clone ✨</h1>
 
 <p align="center">
 A simple Spotify-inspired music app built with the <strong>MERN stack</strong>, <strong>TypeScript</strong>, <strong>Clerk</strong> for authentication, and <strong>Cloudinary</strong> for media storage.
@@ -17,6 +17,12 @@ A simple Spotify-inspired music app built with the <strong>MERN stack</strong>, 
 - 👨🏼‍💼 Online/offline status  
 - 📊 Analytics dashboard  
 - 🌟 And more…
+
+---
+
+## 🌐 Live Demo
+
+Check out the deployed app here 👉 [MERN Spotify Clone](https://mern-spotify-clone-df2v.onrender.com)
 
 ---
 
@@ -72,12 +78,19 @@ VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 
 ---
 
-## 📃 License
+## 🐳 Docker Images
 
- free to use.
+You can also pull and run the Docker images directly:
+
+* Backend: `yash9699/mern-spotify-clone_backend:latest`
+* Frontend: `yash9699/mern-spotify-clone_frontend:latest`
 
 ---
 
-> ✨ Built by Yash
+## 📃 License
 
+Free to use.
 
+---
+
+> ✨ Built & Deployed by Yash
