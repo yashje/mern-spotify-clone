@@ -34,20 +34,20 @@ app.use(
 	})
 );
 
-app.use(express.json()); // to parse req.body
-app.use(clerkMiddleware()); // this will add auth to req obj => req.auth
+app.use(express.json()); 
+app.use(clerkMiddleware()); 
 app.use(
 	fileUpload({
 		useTempFiles: true,
 		tempFileDir: path.join(__dirname, "tmp"),
 		createParentPath: true,
 		limits: {
-			fileSize: 10 * 1024 * 1024, // 10MB  max file size
+			fileSize: 10 * 1024 * 1024, 
 		},
 	})
 );
 
-// cron jobs
+
 const tempDir = path.join(process.cwd(), "tmp");
 cron.schedule("0 * * * *", () => {
 	if (fs.existsSync(tempDir)) {
@@ -77,7 +77,7 @@ if (process.env.NODE_ENV === "production") {
 	});
 }
 
-// error handler
+
 app.use((err, req, res, next) => {
 	res.status(500).json({ message: process.env.NODE_ENV === "production" ? "Internal server error" : err.message });
 });
